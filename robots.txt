@@ -2,5 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /_template-page.html
 Disallow: /_image-map.json
+Disallow: /_seo_check.py
 
 Sitemap: https://discoverhighworth.com/sitemap.xml
