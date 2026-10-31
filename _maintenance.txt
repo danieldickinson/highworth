@@ -1,0 +1,37 @@
+Discover Highworth editorial and SEO maintenance
+Reviewed: 31 October 2026
+Corrections contact: info@discoverhighworth.com
+
+Before publication:
+- Read _content-review.json for sources and outstanding direct checks.
+- Verify changed hours, prices and closure notices with the venue or official source.
+- Keep dated facts distinct from current promises. Do not change a review date solely to appear fresh.
+- Update visible copy, search/social descriptions and JSON-LD together.
+- Update sitemap lastmod only for pages that substantively changed.
+- Run python3 _seo_check.py and git -c core.whitespace=cr-at-eol diff --check.
+- Preview the affected pages at localhost:8000, then push through the existing GitHub Pages workflow.
+
+Review cadence:
+- Monthly: hours, tariffs, fees, venue closures and contact details.
+- Before promoting an event: confirm the year, date, programme and access with its organiser.
+- Quarterly: civic information, connectivity and online-safety guidance.
+- History: revisit when new evidence appears; attribute uncertain traditions.
+- Routes: a web review is not a physical access survey; verify paths and accessibility before claiming them.
+
+Priority checks:
+- Freke Arms: confirm actual reopening after the advertised evening of 20 November 2026; update both pub and dog-walking pages.
+- Eastcott: confirm when Cricklade Road reopens.
+- Rotary and Community Larder: ask organisers for current schedules before restoring precise times.
+- Christmas 2026 and Buscot's next season: use new dated notices, not previous-year programmes.
+
+Indexing follow-up:
+Baseline (Search Console report dated 23 October): 3 indexed, 14 discovered but not indexed; 17 sitemap URLs. Indexed: home, attractions, pub guide.
+After deploying: verify the production content, request indexing for a small selection of improved pages, and review Search Console after 2–4 weeks (14–28 November 2026).
+Check first-crawl dates and discovery requests rather than repeatedly resubmitting unchanged URLs. Indexing is Google's decision.
+Seek relevant local links through genuine relationships; no outreach has been sent.
+
+Hosting observations:
+Cloudflare supplies a managed robots.txt that differs from this repository. Its public rules permit Googlebot, and Search Console reads the submitted sitemap successfully. Restore the Sitemap declaration and intended exclusions at the hosting layer if the owner changes that configuration. Do not disable bot protections without verified Googlebot failure evidence.
+Public mailto links use Cloudflare's documented email_off comments to avoid broken email-protection links. Check the served HTML after deployment.
+The template has a noindex tag as an additional safeguard. Do not copy that tag into a public page.
+No real-user Core Web Vitals or Lighthouse grade is asserted by the source checks.

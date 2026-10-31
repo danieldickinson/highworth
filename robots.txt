@@ -3,5 +3,7 @@ Allow: /
 Disallow: /_template-page.html
 Disallow: /_image-map.json
 Disallow: /_seo_check.py
+Disallow: /_content-review.json
+Disallow: /_maintenance.txt
 
 Sitemap: https://discoverhighworth.com/sitemap.xml

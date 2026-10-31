@@ -1,0 +1,381 @@
+{
+  "reviewed_on": "2026-10-31",
+  "contact": "info@discoverhighworth.com",
+  "method": "Published-source desk review. No venue calls or physical access survey. Review dates do not certify every listing.",
+  "cadence": {
+    "hours_prices_closures": "monthly",
+    "events": "before promotion and each season",
+    "civic_connectivity": "quarterly",
+    "history": "when new evidence emerges"
+  },
+  "indexing_baseline": {
+    "report_date": "2026-10-23",
+    "indexed": 3,
+    "discovered_not_indexed": 14,
+    "sitemap_urls": 17,
+    "next_review_window": "2026-11-14 to 2026-11-28"
+  },
+  "pages": [
+    {
+      "page": "index.html",
+      "reviewed_on": "2026-10-31",
+      "sources": [
+        {
+          "name": "Council market history",
+          "url": "https://highworthtowncouncil.gov.uk/saturday-market/"
+        }
+      ],
+      "note": "Audit finding retained as provenance; supported corrections applied and unsupported precision removed or qualified. This field records original review scope, not current website copy.",
+      "audit_findings_before_changes": "The main visitor links are present in static HTML. Clarify who runs the independent guide: “From the Town Council” can imply official authorship. Market history should distinguish the 1206 charter from the revived Saturday market. Fix the shared council postcode and provide a real site corrections contact."
+    },
+    {
+      "page": "visit/attractions.html",
+      "reviewed_on": "2026-10-31",
+      "sources": [
+        {
+          "name": "Visitor Centre",
+          "url": "http://visithighworth.co.uk/vhl-touristinfo.html"
+        },
+        {
+          "name": "Buscot opening dates",
+          "url": "https://buscot-park.com/visitor-info/opening-times-and-entry-prices"
+        },
+        {
+          "name": "STEAM",
+          "url": "https://www.steam-museum.org.uk/visit/opening-times/"
+        }
+      ],
+      "note": "Audit finding retained as provenance; supported corrections applied and unsupported precision removed or qualified. This field records original review scope, not current website copy.",
+      "audit_findings_before_changes": "Visitor Centre opening hours and £5 guided tour price match its published information; STEAM hours also match. Buscot Park’s published April–September season has ended as of this audit: make seasonal availability prominent and link to the next season. Recheck transport routes 76/77 and seasonal café times. The sources checked do not establish current physical accessibility of every attraction."
+    },
+    {
+      "page": "visit/eat-and-drink.html",
+      "reviewed_on": "2026-10-31",
+      "sources": [
+        {
+          "name": "Bloomfields",
+          "url": "https://www.bloomfieldsfinefood.co.uk/contact"
+        },
+        {
+          "name": "Weigh It Up",
+          "url": "https://weighituphighworth.co.uk/"
+        }
+      ],
+      "note": "Audit finding retained as provenance; supported corrections applied and unsupported precision removed or qualified. This field records original review scope, not current website copy.",
+      "audit_findings_before_changes": "Bloomfields address, telephone and hours match its own contact page; Ciao Eatalia, Spice Kitchen and Highworth Kebab contact details match their sites. Weigh It Up showing “Open today 09–17” does not verify the guide’s “daily” schedule. Remove or date rankings and staff names; replace broad allergen assurances with advice to discuss needs with the venue. Old Bakery, Dolphin, Sammy’s and other directory-only details need direct checks. Route site corrections to the editor, not the council."
+    },
+    {
+      "page": "visit/pub-guide.html",
+      "reviewed_on": "2026-10-31",
+      "sources": [
+        {
+          "name": "The Highworth",
+          "url": "https://www.thehighworth.com/"
+        },
+        {
+          "name": "Saracens Head",
+          "url": "https://saracenshead.co.uk/restaurant"
+        },
+        {
+          "name": "Freke Arms",
+          "url": "https://www.frekearms.co.uk/"
+        },
+        {
+          "name": "Arkells Freke facilities",
+          "url": "https://www.arkells.com/pub/freke-arms-swanborough.htm/facilities"
+        },
+        {
+          "name": "Red Lion",
+          "url": "https://www.theredlioncastleeaton.co.uk/"
+        }
+      ],
+      "note": "Audit finding retained as provenance; supported corrections applied and unsupported precision removed or qualified. This field records original review scope, not current website copy.",
+      "audit_findings_before_changes": "The Highworth now publishes seven-day opening from 9am, conflicting with “closed Monday/Tuesday”. Saracens Head has day-specific hours, including weekend breakfast and an earlier Sunday close; “daily 11–23” is inaccurate. Freke Arms reopened but has a current short closure, with an advertised return on the evening of 20 November 2026; the local draft already captures this and is not yet published. Red Lion’s closed Monday/Tuesday pattern matches. Directly recheck pub food times, regular beers, dog areas, child restrictions and historic awards before retaining them as current."
+    },
+    {
+      "page": "visit/shopping.html",
+      "reviewed_on": "2026-10-31",
+      "sources": [
+        {
+          "name": "Andrews",
+          "url": "https://andrewsqualitymeatsltd.co.uk/contact-us"
+        }
+      ],
+      "note": "Audit finding retained as provenance; supported corrections applied and unsupported precision removed or qualified. This field records original review scope, not current website copy.",
+      "audit_findings_before_changes": "Andrews Quality Meats address, telephone and Tuesday–Saturday opening pattern match its contact page; Bloomfields and the florist’s core details also match. Dillons’ cited directory page returns 404 and a Healthera pharmacy source returns 410. Replace those references and verify pharmacy/barber hours with operators. Failed or blocked pages do not establish business closure."
+    },
+    {
+      "page": "visit/market.html",
+      "reviewed_on": "2026-10-31",
+      "sources": [
+        {
+          "name": "Saturday market",
+          "url": "https://highworthtowncouncil.gov.uk/saturday-market/"
+        },
+        {
+          "name": "Council Christmas page",
+          "url": "https://highworthtowncouncil.gov.uk/events/christmas/"
+        },
+        {
+          "name": "Google event requirements",
+          "url": "https://developers.google.com/search/docs/appearance/structured-data/event"
+        }
+      ],
+      "note": "Audit finding retained as provenance; supported corrections applied and unsupported precision removed or qualified. This field records original review scope, not current website copy.",
+      "audit_findings_before_changes": "The council confirms Saturday 8am–2pm and the 1981 revival. The Christmas description is explicitly a 2024 example, not a verified 2026 programme. Obtain a dated 2026 event listing before adding dates or promising attractions; the council Christmas page also still describes 2024. Avoid promising councillors are always available throughout every market without current confirmation. Event JSON-LD lacks startDate; Search Console confirms one invalid event item. Use accurate dated event occurrences or remove inappropriate Event markup, rather than inventing a date."
+    },
+    {
+      "page": "visit/parking-and-toilets.html",
+      "reviewed_on": "2026-10-31",
+      "sources": [
+        {
+          "name": "Council services",
+          "url": "https://highworthtowncouncil.gov.uk/our-services/"
+        },
+        {
+          "name": "Halo centre",
+          "url": "https://haloleisure.org.uk/centres/highworth-recreation-centre/"
+        }
+      ],
+      "note": "Audit finding retained as provenance; supported corrections applied and unsupported precision removed or qualified. This field records original review scope, not current website copy.",
+      "audit_findings_before_changes": "Council toilet hours/charge and Halo’s free parking/accessibility information match published sources. On-street restrictions need current signs or authoritative parking orders; do not generalise unrestricted Sunday parking to every location. “Only one” EV charging site and the quoted 55p/kWh tariff need operator-level verification and a checked date. They are not confirmed current by this audit."
+    },
+    {
+      "page": "do/things-to-do.html",
+      "reviewed_on": "2026-10-31",
+      "sources": [
+        {
+          "name": "Choral membership",
+          "url": "https://www.highworthchoral.co.uk/rehearsals"
+        },
+        {
+          "name": "Camera Club",
+          "url": "https://www.highworthcameraclub.com/"
+        },
+        {
+          "name": "Silver Band",
+          "url": "https://www.highworthsilverband.org/"
+        },
+        {
+          "name": "Library",
+          "url": "https://www.swindon.gov.uk/directory_record/17874/highworth_library"
+        }
+      ],
+      "note": "Audit finding retained as provenance; supported corrections applied and unsupported precision removed or qualified. This field records original review scope, not current website copy.",
+      "audit_findings_before_changes": "Highworth Choral Society’s published annual subscription is £130, not £120. Its Monday rehearsal time, Camera Club’s second-Tuesday meeting, Silver Band’s rehearsal pattern and the library hours match checked sources. Artist session charges, other club schedules and cadet contact information need direct confirmation. The RAF cadet domain did not resolve; Historical Society HTTPS and the www Community Centre host had certificate failures during the checks."
+    },
+    {
+      "page": "do/sport-and-recreation.html",
+      "reviewed_on": "2026-10-31",
+      "sources": [
+        {
+          "name": "Halo",
+          "url": "https://haloleisure.org.uk/centres/highworth-recreation-centre/"
+        },
+        {
+          "name": "Tennis club",
+          "url": "https://www.highworthtennis.com/"
+        },
+        {
+          "name": "FA league",
+          "url": "https://fulltime.thefa.com/index.html?league=646734134"
+        },
+        {
+          "name": "Wrag Barn history",
+          "url": "https://www.wragbarn.com/our-story/"
+        },
+        {
+          "name": "Old golf course",
+          "url": "https://highworthtowncouncil.gov.uk/old-golf-course/"
+        }
+      ],
+      "note": "Audit finding retained as provenance; supported corrections applied and unsupported precision removed or qualified. This field records original review scope, not current website copy.",
+      "audit_findings_before_changes": "Halo currently describes gymnastics for ages 4–6, not 4–8. Centre hours, 25m/four-lane pool and free parking match. Tennis five courts, £6 starting court hire and Wednesday/Friday social sessions match. The FA confirms Highworth Town in the Hellenic Premier Division. Wrag Barn’s own history says founded in 1990, conflicting with the guide’s 1989 opening claim; resolve the distinction or use its wording. Update the range description to its current Trackman facility. Membership prices, martial arts schedules, old golf-course decisions and play-park project status need dated checks; a 2025 source already describes Northview work completed in 2024."
+    },
+    {
+      "page": "do/walks.html",
+      "reviewed_on": "2026-10-31",
+      "sources": [
+        {
+          "name": "Father Thames location",
+          "url": "https://www.visitthames.co.uk/ideas-inspiration/blog/post/father-thames-at-st-johns-lock-a-resting-place-for-a-rivers-spirit/"
+        },
+        {
+          "name": "Visitor Centre",
+          "url": "http://visithighworth.co.uk/vhl-touristinfo.html"
+        }
+      ],
+      "note": "Audit finding retained as provenance; supported corrections applied and unsupported precision removed or qualified. This field records original review scope, not current website copy.",
+      "audit_findings_before_changes": "Father Thames is at St John’s Lock, not Buscot Lock. “Height above the Vale: 133m” should say elevation above sea level. Qualify blanket pushchair-friendly claims by route and surface. Visitor Centre tour information matches. Distances, rights of way, gates, seasonal mud and accessible routes require map/route evidence and ideally a walked check; this was a desk audit."
+    },
+    {
+      "page": "do/dog-walks.html",
+      "reviewed_on": "2026-10-31",
+      "sources": [
+        {
+          "name": "Eastcott notice",
+          "url": "https://www.eastcottvets.co.uk/vets-near-highworth"
+        },
+        {
+          "name": "Archway",
+          "url": "https://www.archwayvets.co.uk/contact-us"
+        },
+        {
+          "name": "Freke",
+          "url": "https://www.frekearms.co.uk/"
+        },
+        {
+          "name": "Countryside Code",
+          "url": "https://www.gov.uk/government/publications/the-countryside-code"
+        }
+      ],
+      "note": "Audit finding retained as provenance; supported corrections applied and unsupported precision removed or qualified. This field records original review scope, not current website copy.",
+      "audit_findings_before_changes": "Synchronise the Freke Arms note with the pub guide. Eastcott’s Highworth-area page currently says its Cricklade Road branch is temporarily closed; do not present it as an operating local clinic. Edison Park emergency contact is supported. Archway’s published Highworth days match. Replace the inactive Pentylands source and avoid unqualified legal claims about livestock incidents; use the current borough dog-control order and Countryside Code. Check the actual route, livestock and seasonal conditions before recommending off-lead access."
+    },
+    {
+      "page": "town/history.html",
+      "reviewed_on": "2026-10-31",
+      "sources": [
+        {
+          "name": "Historical Society",
+          "url": "http://highworthhistoricalsociety.org.uk/"
+        }
+      ],
+      "note": "Audit finding retained as provenance; supported corrections applied and unsupported precision removed or qualified. This field records original review scope, not current website copy.",
+      "audit_findings_before_changes": "No current opening-status issue identified in the historic narrative. Distinguish archaeological evidence and local tradition from certainty: continuous occupation and the cannonball story need careful attribution. Verify the exact 2021 population against the intended ONS geography before keeping the precise figure; a rounded council figure alone does not disprove it. Some Historical Society HTTPS source links fail certificate verification; the HTTP history source remains available."
+    },
+    {
+      "page": "town/railway.html",
+      "reviewed_on": "2026-10-31",
+      "sources": [
+        {
+          "name": "Railway history",
+          "url": "http://highworthhistoricalsociety.org.uk/highworth-light-railway/"
+        }
+      ],
+      "note": "Audit finding retained as provenance; supported corrections applied and unsupported precision removed or qualified. This field records original review scope, not current website copy.",
+      "audit_findings_before_changes": "Historical dates broadly align with the cited railway history. The present-day walkability of surviving sections is a separate claim: do not imply the entire former trackbed is a public route. Add mapped public rights of way and specific accessible segments. Refresh failing Historical Society HTTPS source links without asserting that the organisation has closed."
+    },
+    {
+      "page": "town/charities.html",
+      "reviewed_on": "2026-10-31",
+      "sources": [
+        {
+          "name": "Rotary programme",
+          "url": "https://rotary-ribi.org/clubs/homepage.php?ClubID=616"
+        }
+      ],
+      "note": "Audit finding retained as provenance; supported corrections applied and unsupported precision removed or qualified. This field records original review scope, not current website copy.",
+      "audit_findings_before_changes": "Rotary’s own page conflicts internally: its prominent schedule says 18:15 on specified Mondays, while an older paragraph says 18:30. Link to its current programme/contact until resolved. Larder address/telephone are supported, but the Tuesday-session evidence is old; confirm current distribution arrangements. Forget Me Knots meeting details and Lions information need a current organiser check. Youth Swindon & Wiltshire charity identity and Community Church core contact/service details are supported by checked sources."
+    },
+    {
+      "page": "council/index.html",
+      "reviewed_on": "2026-10-31",
+      "sources": [
+        {
+          "name": "Mayor",
+          "url": "https://highworthtowncouncil.gov.uk/mayor/"
+        },
+        {
+          "name": "2026 parish election notice",
+          "url": "https://www.swindon.gov.uk/download/downloads/id/12022/notice_of_election_-_parishes_2026.pdf"
+        },
+        {
+          "name": "3G pitch",
+          "url": "https://highworthtowncouncil.gov.uk/3g-pitch/"
+        }
+      ],
+      "note": "Audit finding retained as provenance; supported corrections applied and unsupported precision removed or qualified. This field records original review scope, not current website copy.",
+      "audit_findings_before_changes": "The guide’s “last election: 4 May 2023” is stale: the official 2026 parish election notice includes Highworth’s 15 seats for 7 May 2026. Check the result before describing the elected composition. Julie Murphy as 2026/27 mayor matches the council. The correct office address is 3 Gilberts Lane, SN6 7FB; shared site footers use SN6 7AJ. Recheck the £735,873 precept against the adopted 2026/27 papers, and date project updates: an expected early-2026 build date is not evidence that the 3G pitch is completed."
+    },
+    {
+      "page": "residents/broadband-and-mobile.html",
+      "reviewed_on": "2026-10-31",
+      "sources": [
+        {
+          "name": "Openreach national stop-sell",
+          "url": "https://www.openreach.com/news-and-opinion/2023/openreach-change-telephone-network"
+        },
+        {
+          "name": "Check your address",
+          "url": "https://www.openreach.com/fibre-checker"
+        },
+        {
+          "name": "Ofcom social tariffs",
+          "url": "https://www.ofcom.org.uk/phones-and-broadband/saving-money/social-tariffs"
+        },
+        {
+          "name": "Relay UK emergency access",
+          "url": "https://www.relayuk.bt.com/how-to-use-relay-uk/contact-999-using-relay-uk.html"
+        }
+      ],
+      "note": "Audit finding retained as provenance; supported corrections applied and unsupported precision removed or qualified. This field records original review scope, not current website copy.",
+      "audit_findings_before_changes": "September 2023 national copper telephone stop-sell does not prove Highworth has 75% FTTP coverage. Distinguish national PSTN migration from exchange-specific fibre stop-sell; use address-level availability checks. Ofcom says social tariffs can have a small setup fee, contradicting “no setup fees”. Do not promise Project Gigabit will eventually serve every property. The Vodafone/Three merger does not establish identical coverage/features for every listed budget brand. Emergency SMS is intended for deaf, hard-of-hearing or speech-impaired users; remove its promotion as a general weak-signal workaround."
+    },
+    {
+      "page": "residents/online-safety.html",
+      "reviewed_on": "2026-10-31",
+      "sources": [
+        {
+          "name": "Royal Mail scam guidance",
+          "url": "https://www.royalmail.com/help/scam-protection"
+        },
+        {
+          "name": "Genuine HMRC contacts",
+          "url": "https://www.gov.uk/government/collections/check-a-list-of-genuine-hmrc-contacts"
+        },
+        {
+          "name": "HMRC debt collection",
+          "url": "https://www.gov.uk/guidance/what-will-happen-if-you-do-not-pay-your-tax-bill"
+        },
+        {
+          "name": "NCSC Cyber Aware",
+          "url": "https://www.ncsc.gov.uk/cyberaware/home"
+        }
+      ],
+      "note": "Audit finding retained as provenance; supported corrections applied and unsupported precision removed or qualified. This field records original review scope, not current website copy.",
+      "audit_findings_before_changes": "Remove absolute claims: real couriers can send customs-charge texts (Royal Mail documents this), and genuine HMRC debt-related calls exist. Advise independent verification through known official channels. Two-factor authentication reduces risk but cannot guarantee an attacker cannot get in. Do not promise every report results in a takedown or imply all public Wi-Fi traffic is unencrypted. Keep practical reporting routes, but accurately scope 159 to participating banks and distinguish dialling it from trusting displayed caller ID."
+    }
+  ],
+  "priority_listing_checks": [
+    {
+      "page": "visit/pub-guide.html",
+      "listing": "Freke Arms",
+      "checked": "2026-10-31",
+      "next_check": "2026-11-20",
+      "status": "Advertised reopening in evening; confirm actual return before removing closure notice",
+      "source": "https://www.frekearms.co.uk/"
+    },
+    {
+      "page": "do/dog-walks.html",
+      "listing": "Eastcott Cricklade Road",
+      "checked": "2026-10-31",
+      "status": "Temporary closure published; confirm reopening",
+      "source": "https://www.eastcottvets.co.uk/vets-near-highworth"
+    },
+    {
+      "page": "town/charities.html",
+      "listing": "Rotary",
+      "status": "Conflicting meeting times removed; ask organiser for current programme",
+      "source": "https://rotary-ribi.org/clubs/homepage.php?ClubID=616"
+    },
+    {
+      "page": "town/charities.html",
+      "listing": "Community Larder",
+      "status": "Old Tuesday session claim removed; confirm current collection arrangements",
+      "source": "https://www.facebook.com/highworthcommunitylarder"
+    },
+    {
+      "page": "visit/market.html",
+      "listing": "Christmas event",
+      "status": "2026 programme not verified; do not reuse 2024 dates",
+      "source": "https://highworthtowncouncil.gov.uk/whats-happening/"
+    },
+    {
+      "page": "visit/attractions.html",
+      "listing": "Buscot Park",
+      "status": "2026 season ended; check next published season before updating dates",
+      "source": "https://buscot-park.com/visitor-info/opening-times-and-entry-prices"
+    }
+  ]
+}
