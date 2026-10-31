@@ -1,0 +1,13 @@
+/* Dog-bin map: keep Leaflet controls below the shared sticky header. */
+#dog-bin-map{scroll-margin-top:86px;}
+.dog-bins-map{height:560px; width:100%; border:1px solid var(--navy-20); border-radius:var(--radius); background:var(--stone); isolation:isolate; z-index:0;}
+.dog-bin-toolbar{display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; margin:18px 0 8px;}
+.dog-bin-toolbar .btn{cursor:pointer;}
+.dog-bin-toolbar [hidden]{display:none;}
+.dog-bin-key{color:var(--green); font-size:24px; vertical-align:middle;}
+.dog-bin-marker{display:grid; place-items:center; background:var(--green); color:#fff; border:2px solid #fff; border-radius:50%; box-shadow:0 1px 5px #0006; font:700 13px var(--sans);}
+.dog-bin-marker:focus{outline:3px solid var(--navy); outline-offset:3px;}
+.dog-bins-map .leaflet-popup-content{font:16px/1.5 var(--sans);}
+.dog-bins-map .leaflet-control-attribution{font-size:11px;}
+.dog-bins-map .leaflet-control-attribution a{color:#17517A;}
+@media(max-width:760px){.dog-bins-map{height:430px;}}

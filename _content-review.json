@@ -231,7 +231,16 @@
         }
       ],
       "note": "Audit finding retained as provenance; supported corrections applied and unsupported precision removed or qualified. This field records original review scope, not current website copy.",
-      "audit_findings_before_changes": "Synchronise the Freke Arms note with the pub guide. Eastcott’s Highworth-area page currently says its Cricklade Road branch is temporarily closed; do not present it as an operating local clinic. Edison Park emergency contact is supported. Archway’s published Highworth days match. Replace the inactive Pentylands source and avoid unqualified legal claims about livestock incidents; use the current borough dog-control order and Countryside Code. Check the actual route, livestock and seasonal conditions before recommending off-lead access."
+      "audit_findings_before_changes": "Synchronise the Freke Arms note with the pub guide. Eastcott’s Highworth-area page currently says its Cricklade Road branch is temporarily closed; do not present it as an operating local clinic. Edison Park emergency contact is supported. Archway’s published Highworth days match. Replace the inactive Pentylands source and avoid unqualified legal claims about livestock incidents; use the current borough dog-control order and Countryside Code. Check the actual route, livestock and seasonal conditions before recommending off-lead access.",
+      "dog_bin_map_review": {
+        "checked": "2026-10-31",
+        "source_published": "2021-03-28",
+        "source": "https://www.google.com/maps/d/viewer?mid=1s4-3oSEXaFsDKk-9qUpR31_Jp3nApofT",
+        "council_source": "https://highworthtowncouncil.gov.uk/our-services/",
+        "source_export": "https://www.google.com/maps/d/kml?mid=1s4-3oSEXaFsDKk-9qUpR31_Jp3nApofT&forcekml=1",
+        "source_markers": 38,
+        "note": "Only Refuse-layer Dogbin point records shown; bag dispensers omitted. Retain nearby pairs, which may be separate bins or duplicate source entries. No physical survey or confirmation of current availability. Re-export when council map changes; compare markers and update the visible checked date only after review."
+      }
     },
     {
       "page": "town/history.html",
@@ -416,6 +425,14 @@
       "next_check": "2026-11-30",
       "status": "Check council map for updates; confirm any reported access changes with device guardian before publishing. Recheck RCUK guidance when revised.",
       "source": "https://highworthtowncouncil.gov.uk/defibrillators/"
+    },
+    {
+      "page": "do/dog-walks.html",
+      "listing": "Dog-bin map",
+      "checked": "2026-10-31",
+      "next_check": "2026-11-30",
+      "status": "Check council parish map for changes; source published March 2021, per-bin inspection dates unknown. Verify reported removals with council before editing coordinates.",
+      "source": "https://www.google.com/maps/d/viewer?mid=1s4-3oSEXaFsDKk-9qUpR31_Jp3nApofT"
     }
   ]
 }

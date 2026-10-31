@@ -13,15 +13,17 @@
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dog walks near Highworth, local rules and vets · Discover Highworth</title>
-<meta name="description" content="Dog walking in Highworth: the best walks from Pentylands Country Park to Hannington, the dog-fouling rules and fines, dog-friendly pubs, local vets, and who to call about a lost or stray dog.">
+<meta name="description" content="Dog walking in Highworth: explore local walks, find recorded dog waste bin locations on a map, check dog-fouling rules, and find dog-friendly pubs and vets.">
 <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="../assets/css/dog-bins.css">
 <link rel="canonical" href="https://discoverhighworth.com/do/dog-walks.html">
 <meta property="og:title" content="Dog walks near Highworth, local rules and vets · Discover Highworth">
-<meta property="og:description" content="Dog walking in Highworth: the best walks from Pentylands Country Park to Hannington, the dog-fouling rules and fines, dog-friendly pubs, local vets, and who to call about a lost or stray dog.">
+<meta property="og:description" content="Dog walking in Highworth: explore local walks, find recorded dog waste bin locations on a map, check dog-fouling rules, and find dog-friendly pubs and vets.">
 <meta property="og:url" content="https://discoverhighworth.com/do/dog-walks.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Discover Highworth">
@@ -32,10 +34,10 @@
 <meta property="og:image:alt" content="A grassy farm track between hedgerows near Pentylands Farm on the west side of Highworth">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Dog walks near Highworth, local rules and vets · Discover Highworth">
-<meta name="twitter:description" content="Dog walking in Highworth: the best walks from Pentylands Country Park to Hannington, the dog-fouling rules and fines, dog-friendly pubs, local vets, and who to call about a lost or stray dog.">
+<meta name="twitter:description" content="Dog walking in Highworth: explore local walks, find recorded dog waste bin locations on a map, check dog-fouling rules, and find dog-friendly pubs and vets.">
 <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/0/04/Track_near_Pentylands_Farm%2C_Highworth_-_geograph.org.uk_-_446545.jpg">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://discoverhighworth.com/"},{"@type":"ListItem","position":2,"name":"Dog walking","item":"https://discoverhighworth.com/do/dog-walks.html"}]},{"@type":"Article","headline":"Walkies on the hilltop.","description":"Dog walking in Highworth: the best walks from Pentylands Country Park to Hannington, the dog-fouling rules and fines, dog-friendly pubs, local vets, and who to call about a lost or stray dog.","image":"https://upload.wikimedia.org/wikipedia/commons/0/04/Track_near_Pentylands_Farm%2C_Highworth_-_geograph.org.uk_-_446545.jpg","datePublished":"2026-06-12","inLanguage":"en-GB","author":{"@type":"Organization","name":"Discover Highworth"},"publisher":{"@type":"Organization","name":"Discover Highworth"},"mainEntityOfPage":"https://discoverhighworth.com/do/dog-walks.html","dateModified":"2026-10-31"}]}
+{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://discoverhighworth.com/"},{"@type":"ListItem","position":2,"name":"Dog walking","item":"https://discoverhighworth.com/do/dog-walks.html"}]},{"@type":"Article","headline":"Walkies on the hilltop.","description":"Dog walking in Highworth: explore local walks, find recorded dog waste bin locations on a map, check dog-fouling rules, and find dog-friendly pubs and vets.","image":"https://upload.wikimedia.org/wikipedia/commons/0/04/Track_near_Pentylands_Farm%2C_Highworth_-_geograph.org.uk_-_446545.jpg","datePublished":"2026-06-12","inLanguage":"en-GB","author":{"@type":"Organization","name":"Discover Highworth"},"publisher":{"@type":"Organization","name":"Discover Highworth"},"mainEntityOfPage":"https://discoverhighworth.com/do/dog-walks.html","dateModified":"2026-10-31"}]}
 </script>
 </head>
 <body>
@@ -140,6 +142,8 @@
 
 <!-- ======================= CONTENT START ======================= -->
 
+<div class="btn-row"><a class="btn" href="#dog-bin-map">Find a dog waste bin</a></div>
+
 <div class="facts">
   <div class="fact">
     <div class="f-label">Favourite walk</div>
@@ -209,11 +213,34 @@
   </div>
 </section>
 
+<section class="block" id="dog-bin-map" aria-labelledby="dog-bin-map-title">
+  <div class="section-head">
+    <div class="eyebrow">Bag it, bin it</div>
+    <h2 id="dog-bin-map-title">Dog waste bins in Highworth</h2>
+    <p class="lede">Plan your walk around the dog-bin locations recorded on the council’s parish map. Select a numbered marker to open that location in Google Maps.</p>
+  </div>
+  <p>Locations are taken from the “Dogbin” entries in the Refuse layer of the <a href="https://www.google.com/maps/d/viewer?mid=1s4-3oSEXaFsDKk-9qUpR31_Jp3nApofT">Highworth Parish Map</a>, linked from <a href="https://highworthtowncouncil.gov.uk/our-services/">Highworth Town Council’s services page</a>. Litter bins and bag dispensers are not shown here.</p>
+  <div class="note"><p><strong>Source checked: 31 October 2026.</strong> The council map displays a publication date of 28 March 2021; it does not give a recent inspection date for each bin. Locations may have changed. Carry bags and take waste home if a bin is missing or full.</p></div>
+  <div class="dog-bin-toolbar">
+    <p><span class="dog-bin-key" aria-hidden="true">●</span> Numbered markers show recorded dog-bin locations</p>
+    <button class="btn ghost" type="button" id="dog-bins-reset" hidden>Show all bins</button>
+  </div>
+  <p class="small" id="dog-bins-help">Use + / − to zoom, or drag the map. Some markers are close together; zoom in to separate them. Keyboard users can focus the map and use the arrow keys, or tab to a marker and press Enter.</p>
+  <div id="dog-bins-map" class="dog-bins-map" role="region" aria-label="Map of recorded dog waste bin locations in Highworth" aria-describedby="dog-bins-help"></div>
+  <p id="dog-bins-status" class="small" role="status">Loading the map… If it does not appear, use the council map link below.</p>
+  <noscript><p>JavaScript is needed for the interactive map. Open the council’s original map using the link below.</p></noscript>
+  <div class="btn-row">
+    <a class="btn" href="https://www.google.com/maps/d/viewer?mid=1s4-3oSEXaFsDKk-9qUpR31_Jp3nApofT">Open the council’s original map</a>
+    <a class="btn ghost" href="https://www.swindon.gov.uk/info/20023/environmental_problems/361/tell_us_if_a_dog_poo_bin_needs_emptying">Report a bin problem</a>
+  </div>
+  <p class="small">On the original map, open the layer menu and look under “Refuse” for “Dogbin”. Marker numbers on this page are for reference, not council bin IDs. Map locations have not been checked on the ground. <!--email_off--><a href="mailto:info@discoverhighworth.com">Tell us about a correction</a><!--/email_off-->.</p>
+</section>
+
 <section class="block">
   <div class="section-head">
     <div class="eyebrow">Doing your bit</div>
     <h2>Picking up, and where the bins are</h2>
-    <p class="lede">The rules here are simple and the bins are plentiful — there is no excuse for leaving anything behind.</p>
+    <p class="lede">Carry bags, pick up after your dog and use a suitable bin. If you cannot find one, take the bag home.</p>
   </div>
 
   <div class="panel green">
@@ -229,7 +256,7 @@
   </div>
 
   <div class="note">
-    <p><span class="kicker">Where the bins are.</span> Highworth Town Council provides dog bins and litter bins throughout the town as part of its grounds maintenance, so you are rarely far from one on the parks and main walking routes. Carry a spare bag or two for the field paths, where bins are thinner on the ground. Spot a full, overflowing or damaged dog poo bin? <a href="https://www.swindon.gov.uk/info/20023/environmental_problems/361/tell_us_if_a_dog_poo_bin_needs_emptying">Report it to Swindon Borough Council online</a> and they will empty or repair it.</p>
+    <p><span class="kicker">Where the bins are.</span> Use the <a href="#dog-bin-map">dog waste bin map above</a> to plan your walk. If a bin is full or damaged, <a href="https://www.swindon.gov.uk/info/20023/environmental_problems/361/tell_us_if_a_dog_poo_bin_needs_emptying">report the problem to Swindon Borough Council</a>. Give the location and any identifying details; do not leave bags beside the bin.</p>
   </div>
 </section>
 
@@ -339,6 +366,7 @@
 </section>
 
 <details class="sources"><summary>Sources &amp; credits</summary>
+  <p>Dog-bin map: <a href="https://highworthtowncouncil.gov.uk/our-services/">Highworth Town Council services</a> and its <a href="https://www.google.com/maps/d/viewer?mid=1s4-3oSEXaFsDKk-9qUpR31_Jp3nApofT">Highworth Parish Map, Refuse layer</a>. Dogbin coordinates exported on 31 October 2026; the source displays a publication date of 28 March 2021.</p>
   <ul>
     <li><a href="https://www.swindon.gov.uk/info/20251/community_safety/638/public_spaces_protection_orders_pspo">https://www.swindon.gov.uk/info/20251/community_safety/638/public_spaces_protection_orders_pspo</a></li>
     <li><a href="https://www.swindon.gov.uk/download/downloads/id/11836/dog_fouling_and_dog_control_borough_wide_public_space_protection_order_-_2025-2028.pdf">https://www.swindon.gov.uk/download/downloads/id/11836/dog_fouling_and_dog_control_borough_wide_public_space_protection_order_-_2025-2028.pdf</a></li>
@@ -405,5 +433,7 @@
 </footer>
 
 <script src="../assets/js/site.js"></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script defer src="../assets/js/dog-bins.js"></script>
 </body>
 </html>
