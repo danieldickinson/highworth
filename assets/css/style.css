@@ -287,8 +287,8 @@ figure.photo figcaption a{color:var(--sarsen);}
 .endcap h3{color:var(--white); margin-top:0; font-size:19px;}
 .endcap a{color:#E8DCAE; text-decoration:none;}
 .endcap a:hover{color:var(--gold); text-decoration:underline;}
-.endcap .cols{display:grid; grid-template-columns:1.2fr 1fr 1fr 1fr; gap:30px;}
-@media (max-width:860px){ .endcap .cols{grid-template-columns:1fr 1fr;} }
+.endcap .cols{display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:30px;}
+@media (max-width:860px){ .endcap .cols{grid-template-columns:1fr 1fr;} .endcap .cols > div:first-child{grid-column:1 / -1;} }
 @media (max-width:560px){ .endcap .cols{grid-template-columns:1fr;} }
 .endcap ul{list-style:none; margin:0; padding:0;}
 .endcap li{margin:7px 0; font-size:14.5px;}
