@@ -6,7 +6,8 @@
     "hours_prices_closures": "monthly",
     "events": "before promotion and each season",
     "civic_connectivity": "quarterly",
-    "history": "when new evidence emerges"
+    "history": "when new evidence emerges",
+    "defibrillators": "monthly, and immediately when an access change or updated resuscitation guidance is reported"
   },
   "indexing_baseline": {
     "report_date": "2026-10-23",
@@ -335,6 +336,37 @@
       ],
       "note": "Audit finding retained as provenance; supported corrections applied and unsupported precision removed or qualified. This field records original review scope, not current website copy.",
       "audit_findings_before_changes": "Remove absolute claims: real couriers can send customs-charge texts (Royal Mail documents this), and genuine HMRC debt-related calls exist. Advise independent verification through known official channels. Two-factor authentication reduces risk but cannot guarantee an attacker cannot get in. Do not promise every report results in a takedown or imply all public Wi-Fi traffic is unencrypted. Keep practical reporting routes, but accurately scope 159 to participating banks and distinguish dialling it from trusting displayed caller ID."
+    },
+    {
+      "page": "residents/defibrillators.html",
+      "reviewed_on": "2026-10-31",
+      "sources": [
+        {
+          "name": "Council defibrillator page",
+          "url": "https://highworthtowncouncil.gov.uk/defibrillators/"
+        },
+        {
+          "name": "Council map dated 23 July 2026",
+          "url": "https://highworthtowncouncil.gov.uk/wp-content/uploads/2026/07/Defib-Map-23.07.2026.png"
+        },
+        {
+          "name": "RCUK public CPR",
+          "url": "https://www.resus.org.uk/cpr"
+        },
+        {
+          "name": "RCUK adult BLS 2025",
+          "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-basic-life-support-guidelines"
+        },
+        {
+          "name": "BHF AED guide",
+          "url": "https://www.bhf.org.uk/how-you-can-help/how-to-save-a-life/defibrillators-what-they-are-and-how-to-use-them"
+        },
+        {
+          "name": "RCUK cabinets and The Circuit",
+          "url": "https://www.resus.org.uk/about-us/news-and-events/consensus-statement-aed-cabinets"
+        }
+      ],
+      "note": "Location names and access categories transcribed from the council map; external map displayed with attribution and source link. No physical inspection, live availability or precise cabinet access claim. Adult CPR explicitly scoped; emergency instructions prioritize 999 and dispatcher guidance."
     }
   ],
   "priority_listing_checks": [
@@ -376,6 +408,14 @@
       "listing": "Buscot Park",
       "status": "2026 season ended; check next published season before updating dates",
       "source": "https://buscot-park.com/visitor-info/opening-times-and-entry-prices"
+    },
+    {
+      "page": "residents/defibrillators.html",
+      "listing": "Council AED map and access categories",
+      "checked": "2026-10-31",
+      "next_check": "2026-11-30",
+      "status": "Check council map for updates; confirm any reported access changes with device guardian before publishing. Recheck RCUK guidance when revised.",
+      "source": "https://highworthtowncouncil.gov.uk/defibrillators/"
     }
   ]
 }

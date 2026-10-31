@@ -25,6 +25,7 @@ EXPECTED = {
     "council/index.html": DOMAIN + "/council/",
     "residents/broadband-and-mobile.html": DOMAIN + "/residents/broadband-and-mobile.html",
     "residents/online-safety.html": DOMAIN + "/residents/online-safety.html",
+    "residents/defibrillators.html": DOMAIN + "/residents/defibrillators.html",
 }
 OG_REQUIRED = ["og:title", "og:description", "og:url", "og:type", "og:site_name",
                "og:locale", "og:image", "og:image:width", "og:image:height", "og:image:alt"]

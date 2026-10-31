@@ -316,3 +316,30 @@ figure.photo figcaption a{color:var(--sarsen);}
   .panel,.card,.venue{box-shadow:none;}
   .endcap{background:#fff; color:var(--ink);}
 }
+
+/* ---------- defibrillator guide ---------- */
+.defib-hero .wrap{padding-top:24px; padding-bottom:14px;}
+.defib-hero .skyband{height:40px;}
+.defib-hero .crumbs{margin-bottom:14px;}
+.defib-emergency{border:2px solid var(--red); border-left-width:8px; background:#FFF5F2; display:flex; align-items:center; gap:28px;}
+.defib-emergency h2{color:var(--red); margin-top:6px;}
+.defib-label{color:var(--red); font-weight:700; margin-top:0;}
+.defib-call{background:var(--red); flex:0 0 auto; text-align:center; font-size:25px; padding:16px 24px;}
+.defib-call:hover{background:#762B20;}
+.defib-call span{display:block; font-size:14px; margin-top:4px;}
+.defib-map-layout{display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,1fr); gap:24px; align-items:start;}
+.defib-map{padding:16px;}
+.defib-map img{width:100%; height:auto;}
+.defib-map figcaption{font-size:14px; color:var(--sarsen); margin-top:12px;}
+.defib-locations h3{font-size:20px;}
+.defib-steps{list-style:none; counter-reset:defib-step; margin:20px 0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px;}
+.defib-steps li{counter-increment:defib-step; background:#fff; border:1px solid var(--navy-20); border-radius:var(--radius); padding:24px; margin:0;}
+.defib-steps li::before{content:counter(defib-step); display:inline-grid; place-items:center; width:36px; height:36px; background:var(--navy); color:#fff; border-radius:50%; font-weight:700;}
+.defib-steps h3{margin-top:14px;}
+.defib-steps li:last-child:nth-child(odd){grid-column:1 / -1;}
+#locations,#cpr,#use-aed{scroll-margin-top:90px;}
+@media(max-width:760px){
+  .defib-emergency{flex-direction:column; align-items:stretch; gap:16px;}
+  .defib-call{order:-1; margin:0; width:100%;}
+  .defib-map-layout,.defib-steps{grid-template-columns:1fr;}
+}
