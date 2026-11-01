@@ -188,8 +188,15 @@
     const link = document.createElement('a');
     link.href = 'https://www.google.com/maps/search/?api=1&query='+coordinates.join(',');
     link.textContent = 'View this location in Google Maps';
-    popup.append(heading, note, link);
-    marker.bindPopup(popup);
+    const words = document.createElement('a');
+    words.href = 'https://what3words.com/'+coordinates.join(',');
+    words.textContent = 'View this recorded pin in what3words';
+    const wordsRow = document.createElement('p');
+    wordsRow.append(words);
+    const precision = document.createElement('p');
+    precision.textContent = 'The three-word address refers to the council’s map pin, not a surveyed bin position. Check the square on arrival.';
+    popup.append(heading, note, link, wordsRow, precision);
+    marker.bindPopup(popup, {autoPanPaddingTopLeft:[10,80], autoPanPaddingBottomRight:[10,20]});
   });
   showAll();
   reset.hidden = false;

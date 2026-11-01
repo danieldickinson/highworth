@@ -1,0 +1,20 @@
+/* Interactive image map preserves the council's positions and separate inset. */
+.aed-map{height:640px; width:100%; border:1px solid var(--navy-20); border-radius:var(--radius); background:var(--stone); isolation:isolate; z-index:0; scroll-margin-top:86px;}
+.aed-map-controls{display:flex; align-items:end; flex-wrap:wrap; gap:14px; margin:20px 0 12px;}
+.aed-map-controls [hidden],.aed-map-controls[hidden],.aed-map[hidden]{display:none;}
+.aed-map-controls label{display:block; font-weight:700; color:var(--navy); margin-bottom:6px;}
+.aed-map-controls select{max-width:100%; width:480px; background:#fff; color:var(--ink); border:1px solid var(--navy-80); border-radius:8px; padding:11px; font:16px var(--sans);}
+.aed-map-controls > div{max-width:100%;}
+.aed-map-controls button,.aed-list-location{cursor:pointer;}
+.aed-marker{display:grid; place-items:center; border:2px solid #fff; border-radius:50%; box-shadow:0 1px 5px #0008; font:700 12px var(--sans);}
+.aed-marker--24h{background:var(--red); color:#fff;}
+.aed-marker--restricted{background:var(--gold); color:var(--ink);}
+.aed-marker:focus,.aed-list-location:focus-visible{outline:3px solid var(--navy); outline-offset:3px;}
+.aed-map .leaflet-popup-content{font:15px/1.45 var(--sans);}
+.aed-map .leaflet-popup-content p{margin:10px 0;}
+.aed-original{margin:22px 0;}
+.aed-original summary{font-weight:700; cursor:pointer; color:var(--navy);}
+.aed-original .defib-map{max-width:700px; margin:16px auto;}
+.aed-source-lists .defib-locations{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px;}
+.aed-list-location{background:none; border:0; color:var(--navy); text-align:left; text-decoration:underline; text-underline-offset:3px; font:inherit; padding:5px 0;}
+@media(max-width:760px){.aed-map{height:560px;}.aed-source-lists .defib-locations{grid-template-columns:1fr;gap:0;}}

@@ -13,16 +13,18 @@
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Defibrillators in Highworth: locations, CPR and AED guide · Discover Highworth</title>
-<meta name="description" content="Find Highworth defibrillator locations on the council map, check recorded access, and learn what to do: call 999, start CPR and follow the AED prompts.">
+<meta name="description" content="Find Highworth defibrillator locations on an interactive council map, check recorded access, and learn what to do: call 999, start CPR and follow the AED prompts.">
 <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css?v=20261031-defibrillators">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="../assets/css/defibrillator-map.css">
 <!-- SEO block — fill in for every new page (see existing pages for worked examples) -->
 <link rel="canonical" href="https://discoverhighworth.com/residents/defibrillators.html">
 <meta property="og:title" content="Defibrillators in Highworth: locations, CPR and AED guide · Discover Highworth">
-<meta property="og:description" content="Find Highworth defibrillator locations on the council map, check recorded access, and learn what to do: call 999, start CPR and follow the AED prompts.">
+<meta property="og:description" content="Find Highworth defibrillator locations on an interactive council map, check recorded access, and learn what to do: call 999, start CPR and follow the AED prompts.">
 <meta property="og:url" content="https://discoverhighworth.com/residents/defibrillators.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Discover Highworth">
@@ -33,7 +35,7 @@
 <meta property="og:image:alt" content="The High Street in Highworth, Wiltshire">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Defibrillators in Highworth: locations, CPR and AED guide · Discover Highworth">
-<meta name="twitter:description" content="Find Highworth defibrillator locations on the council map, check recorded access, and learn what to do: call 999, start CPR and follow the AED prompts.">
+<meta name="twitter:description" content="Find Highworth defibrillator locations on an interactive council map, check recorded access, and learn what to do: call 999, start CPR and follow the AED prompts.">
 <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/4/45/High_Street%2C_Highworth_-_geograph.org.uk_-_1904855.jpg">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -163,12 +165,24 @@
 <section class="block" id="locations" aria-labelledby="locations-title">
   <div class="eyebrow">Know your nearest</div>
   <h2 id="locations-title">Defibrillator locations</h2>
-  <p>The map and lists below come from <a href="https://highworthtowncouncil.gov.uk/defibrillators/">Highworth Town Council’s defibrillator page</a>. Its published map is dated <strong>23 July 2026</strong>; we checked the source on <strong>31 October 2026</strong>.</p>
+  <p>The map and lists below come from <a href="https://highworthtowncouncil.gov.uk/defibrillators/">Highworth Town Council’s defibrillator page</a>. Its published map is dated <strong>23 July 2026</strong>; we checked the map source on <strong>1 November 2026</strong>.</p>
   <div class="note">
     <p><strong>This is a planning map, not a live availability service.</strong> Devices can be temporarily unavailable and building access can change. In an emergency, call 999 first; the ambulance service can direct another helper to an accessible AED and provide a cabinet code where needed. Do not delay CPR to browse the map.</p>
     <p class="small">Access guidance: <a href="https://www.resus.org.uk/about-us/news-and-events/consensus-statement-aed-cabinets">Resuscitation Council UK — AED cabinets and The Circuit</a>.</p>
   </div>
-  <div class="defib-map-layout">
+  <p>Zoom and drag the council’s map, select a marker, or choose a named location below. The Sevenhampton location is in the separate inset at the bottom of the map.</p>
+  <div class="aed-map-controls" id="aed-map-controls" hidden>
+    <div><label for="aed-location">Choose a defibrillator location</label><select id="aed-location"><option value="">Show the full map</option></select></div>
+    <button type="button" class="btn ghost" id="aed-map-reset">Show full map</button>
+  </div>
+  <p class="small" id="aed-map-help">Use + / − to zoom, drag to move, or pinch on a phone. Keyboard users can use the location selector or focus the map and use the arrow keys. Red markers: listed as 24-hour access. Yellow markers: listed with restricted access.</p>
+  <div id="aed-map" class="aed-map" role="region" aria-label="Interactive council map of Highworth defibrillator locations" aria-describedby="aed-map-help" hidden></div>
+  <p id="aed-map-status" class="small" role="status">The original council map and location lists are available below if the interactive map does not load.</p>
+  <p class="small">Map: Highworth Town Council, 23 July 2026. Interactive markers follow its published positions; they do not identify surveyed cabinet coordinates. For the latest registered access information, check <a href="https://www.defibfinder.uk/">DefibFinder</a> before an emergency. In an emergency, call 999.</p>
+  <div class="note">
+    <p><strong>what3words:</strong> exact cabinet addresses have not been verified for this guide. To describe <em>your own location</em>, <a href="https://what3words.com/">open what3words</a> and check the selected square. This link does not locate a defibrillator. Call 999 first and follow the call handler’s instructions.</p>
+  </div>
+  <details class="aed-original" id="aed-original"><summary>View the original council map and PDF</summary>
     <figure class="defib-map panel">
       <a href="https://highworthtowncouncil.gov.uk/wp-content/uploads/2026/07/Highworth-Map-Defibrillator-Locations-Updated-23.07.2026.pdf" aria-label="Open the council’s full-size defibrillator location map (PDF)">
         <img src="https://highworthtowncouncil.gov.uk/wp-content/uploads/2026/07/Defib-Map-23.07.2026.png" alt="Highworth and Sevenhampton defibrillator map. Red markers indicate locations listed as accessible 24 hours; yellow markers indicate restricted access. The location names are also listed beside this map." width="668" height="939" loading="lazy">
@@ -177,36 +191,39 @@
       <div class="btn-row"><a class="btn" href="https://highworthtowncouncil.gov.uk/wp-content/uploads/2026/07/Highworth-Map-Defibrillator-Locations-Updated-23.07.2026.pdf">Open full-size map (PDF)</a></div>
       <p class="small">If the image does not load, use the location lists or <a href="https://highworthtowncouncil.gov.uk/defibrillators/">open the council’s source page</a>.</p>
     </figure>
+  </details>
+  <div class="aed-source-lists">
+
     <div class="defib-locations">
       <div class="panel">
         <h3>Listed as accessible 24 hours</h3>
         <p class="small">Red markers on the council’s July 2026 map.</p>
         <ul>
-          <li>Telephone box at the top of Grove Hill</li>
-          <li>Highworth Cemetery</li>
-          <li>Highworth Community Centre</li>
-          <li>Highworth Town Council Office</li>
-          <li>Highworth Recreation Centre</li>
-          <li>St Michael’s Hall</li>
-          <li>Westrop Surgery</li>
-          <li>Barra Close Play Park</li>
-          <li>Sevenhampton — see the map inset</li>
-          <li>1st Highworth Scouts Hut</li>
-          <li>Highworth Town Junior Football Club</li>
-          <li>Gardening Naturally, Blackworth Industrial Estate</li>
-          <li>Outside the sports hall at Highworth Warneford School</li>
+          <li data-aed-id="1">Telephone box at the top of Grove Hill</li>
+          <li data-aed-id="2">Highworth Cemetery</li>
+          <li data-aed-id="3">Highworth Community Centre</li>
+          <li data-aed-id="4">Highworth Town Council Office</li>
+          <li data-aed-id="5">Highworth Recreation Centre</li>
+          <li data-aed-id="6">St Michael’s Hall</li>
+          <li data-aed-id="7">Westrop Surgery</li>
+          <li data-aed-id="8">Barra Close Play Park</li>
+          <li data-aed-id="9">Sevenhampton — see the map inset</li>
+          <li data-aed-id="10">1st Highworth Scouts Hut</li>
+          <li data-aed-id="11">Highworth Town Junior Football Club</li>
+          <li data-aed-id="12">Gardening Naturally, Blackworth Industrial Estate</li>
+          <li data-aed-id="13">Outside the sports hall at Highworth Warneford School</li>
         </ul>
       </div>
       <div class="panel tinted">
         <h3>Listed with restricted access</h3>
         <p class="small">Yellow markers; not listed as available 24 hours.</p>
         <ul>
-          <li>Tesco Express</li>
-          <li>Highworth Recreation Centre — inside the building</li>
-          <li>Highworth Bowls Club</li>
-          <li>Sandsground House, 26 Swindon Street</li>
-          <li>Highworth Town Football Club</li>
-          <li>Aldi</li>
+          <li data-aed-id="14">Tesco Express</li>
+          <li data-aed-id="15">Highworth Recreation Centre — inside the building</li>
+          <li data-aed-id="16">Highworth Bowls Club</li>
+          <li data-aed-id="17">Sandsground House, 26 Swindon Street</li>
+          <li data-aed-id="18">Highworth Town Football Club</li>
+          <li data-aed-id="19">Aldi</li>
         </ul>
       </div>
     </div>
@@ -291,5 +308,7 @@
 </footer>
 
 <script src="../assets/js/site.js"></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script defer src="../assets/js/defibrillator-map.js"></script>
 </body>
 </html>

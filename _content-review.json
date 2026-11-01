@@ -239,7 +239,16 @@
         "council_source": "https://highworthtowncouncil.gov.uk/our-services/",
         "source_export": "https://www.google.com/maps/d/kml?mid=1s4-3oSEXaFsDKk-9qUpR31_Jp3nApofT&forcekml=1",
         "source_markers": 38,
-        "note": "Only Refuse-layer Dogbin point records shown; bag dispensers omitted. Retain nearby pairs, which may be separate bins or duplicate source entries. No physical survey or confirmation of current availability. Re-export when council map changes; compare markers and update the visible checked date only after review."
+        "note": "Only Refuse-layer Dogbin point records shown; bag dispensers omitted. Retain nearby pairs, which may be separate bins or duplicate source entries. No physical survey or confirmation of current availability. Re-export when council map changes; compare markers and update the visible checked date only after review.",
+        "what3words": {
+          "added": "2026-11-01",
+          "method": "Coordinate URL links use the existing council-exported pin coordinates; tested in the official what3words map. Links are labelled as recorded pins, not surveyed bin positions.",
+          "test_coordinate": [
+            51.6414396,
+            -1.7146315
+          ],
+          "test_result": "hiker.typist.basics"
+        }
       }
     },
     {
@@ -375,7 +384,13 @@
           "url": "https://www.resus.org.uk/about-us/news-and-events/consensus-statement-aed-cabinets"
         }
       ],
-      "note": "Location names and access categories transcribed from the council map; external map displayed with attribution and source link. No physical inspection, live availability or precise cabinet access claim. Adult CPR explicitly scoped; emergency instructions prioritize 999 and dispatcher guidance."
+      "note": "Location names and access categories transcribed from the council map; external map displayed with attribution and source link. No physical inspection, live availability or precise cabinet access claim. Adult CPR explicitly scoped; emergency instructions prioritize 999 and dispatcher guidance.",
+      "interactive_map_review": {
+        "checked": "2026-11-01",
+        "method": "Interactive Leaflet image overlay using pixel centres visually read from the unchanged 668x939 council map; no latitude/longitude is inferred. 19 markers, including the separate Sevenhampton inset.",
+        "what3words": "No verified exact cabinet addresses found in council source or sampled public registry listing. Do not derive 3 m squares from this image. Await guardian/council-verified addresses.",
+        "source": "https://highworthtowncouncil.gov.uk/defibrillators/"
+      }
     }
   ],
   "priority_listing_checks": [
