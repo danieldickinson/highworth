@@ -1,0 +1,25 @@
+Discover Highworth project roadmap
+Updated: 1 November 2026
+
+Pending: verified what3words addresses for defibrillator cabinets
+Status: Awaiting council information via the site owner.
+Added: 1 November 2026.
+
+The site owner confirms that Highworth Town Council holds the addresses and will
+provide them. Resume this item when the owner supplies the council information.
+
+When received:
+- Match each three-word address to the named cabinet, distinguishing separate
+  indoor/outdoor devices at the same venue.
+- Check each what3words link and its mapped position against the council details;
+  clarify any mismatch before publishing it.
+- Add the verified address and clickable link to the corresponding defibrillator
+  popup and location list, recording the council source and date received.
+- Replace the unverified-address notice only for entries that have been confirmed.
+- Use confirmed coordinates to consider a geographic map like the dog-bin map;
+  retain the council map and source links for reference.
+- Check mobile/desktop behaviour and links, then publish the update.
+
+Already delivered:
+- Interactive defibrillator map with zoom, pan, clickable markers and venue selector.
+- what3words links for dog-bin source pins, labelled as unsurveyed positions.

@@ -388,7 +388,7 @@
       "interactive_map_review": {
         "checked": "2026-11-01",
         "method": "Interactive Leaflet image overlay using pixel centres visually read from the unchanged 668x939 council map; no latitude/longitude is inferred. 19 markers, including the separate Sevenhampton inset.",
-        "what3words": "No verified exact cabinet addresses found in council source or sampled public registry listing. Do not derive 3 m squares from this image. Await guardian/council-verified addresses.",
+        "what3words": "Pending council-supplied cabinet addresses. On 1 November 2026 the site owner confirmed the council holds these and will provide them; resume when the owner supplies the information. See _roadmap.txt. Do not derive 3 m squares from the image.",
         "source": "https://highworthtowncouncil.gov.uk/defibrillators/"
       }
     }

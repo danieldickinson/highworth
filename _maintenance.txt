@@ -20,6 +20,7 @@ Review cadence:
 - Routes: a web review is not a physical access survey; verify paths and accessibility before claiming them.
 
 Priority checks:
+- Defibrillator what3words addresses: awaiting council information via the site owner; see _roadmap.txt. Resume when the owner supplies it.
 - Freke Arms: confirm actual reopening after the advertised evening of 20 November 2026; update both pub and dog-walking pages.
 - Eastcott: confirm when Cricklade Road reopens.
 - Rotary and Community Larder: ask organisers for current schedules before restoring precise times.
